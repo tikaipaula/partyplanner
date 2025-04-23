@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PartyPlanner 🎉</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎉 PartyPlanner</h1>
+
+    <section class="form-section">
+      <h2>📅 Set Your Party</h2>
+      <input type="date" id="party-date" />
+      <textarea id="party-description" placeholder="Add a fun description..."></textarea>
+      <textarea id="invite-message" placeholder="Write a personalized invite message..."></textarea>
+      <button onclick="setPartyDetails()">Save Party</button>
+    </section>
+
+    <section class="invite-section hidden" id="invite-section">
+      <h2>You're Invited!</h2>
+      <p id="party-info"></p>
+      <p id="invite-text"></p>
+
+      <div class="join-form">
+        <input type="text" id="first-name" placeholder="First Name" />
+        <input type="text" id="last-name" placeholder="Last Name" />
+        <button onclick="registerGuest()">Join the Party</button>
+      </div>
+
+      <h3>🎈 Guest List</h3>
+      <ul id="guest-list"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
